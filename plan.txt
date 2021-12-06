@@ -1,0 +1,11 @@
+header
+
+Main
+    HOME
+    ABOUT
+    SKILLS AND EXPERIENCE
+    PORTFOLOI
+    CONTACT US
+
+
+footer
