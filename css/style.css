@@ -399,9 +399,9 @@ img{
     grid-area: home__content;
     align-content: center;
     text-align: center;
-    /* width: 600px;
+    /* width: 600px;*/
     
-    transform: translateX(-4rem); */
+    transform: translateX(-2.2rem); 
 }
 
 .home__welcome{
