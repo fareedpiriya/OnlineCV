@@ -1,3 +1,16 @@
+fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCabBd1g8nBWWCx2YT4yeXOA&maxResults=10&order=date&key=AIzaSyBa5CZZ0yaUl2WLGdP6tb-t-whMBsr4_2I")
+.then((result)=>{
+    return result.json()
+}).then((data)=>{
+    console.log(data)
+    let videos = data.items
+    let videoContainer = document.querySelector(".youtube-container")
+    for(video of videos){
+        videoContainer.innerHTML +=' <img src="${videos.snippet.thumbnails.default.url}">'
+       
+    }
+})
+
 //===================================== DARK THEME =========================
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
